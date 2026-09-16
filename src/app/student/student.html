@@ -1,0 +1,7 @@
+<!--<p>{{student}}</p>                           modo errato-->
+<!--<p>il nome dello studente è {{student.name}}, vive a {{student.city}}</p>    
+                             esso funziona solo se è singolo per farlo funz<ionare usiamo il costrutto angular for-->
+@for (item of students; track $index)
+{
+ <p>il nome dello studente è {{item.name}}, vive a {{item.city}}</p>
+}
