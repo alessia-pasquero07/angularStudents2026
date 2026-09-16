@@ -1,7 +1,9 @@
 <!--<p>{{student}}</p>                           modo errato-->
 <!--<p>il nome dello studente è {{student.name}}, vive a {{student.city}}</p>    
-                             esso funziona solo se è singolo per farlo funz<ionare usiamo il costrutto angular for-->
+                             esso funziona solo se è singolo per farlo funzionare usiamo il costrutto angular for-->
 @for (item of students; track $index)
 {
- <p>il nome dello studente è {{item.name}}, vive a {{item.city}}</p>
+    <!--'backgroundColor' dipende da item.gender se è F allora sarà rosa altrimenti blu  -->
+    <p [ngStyle]="{'backgroundColor':item.gender=='F'?'pink':'lightblue'}">{{$index +1}}) il nome dello studente è {{item.name}}, vive a {{item.city}}</p>
+    
 }

@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
+import { NgStyle } from '../../../node_modules/@angular/common/types/_common_module-chunk';
 
 @Component({
-  imports: [],
+  imports: [NgStyle],
   selector: 'app-student',
   styleUrl: './student.css',
   templateUrl: './student.html',
