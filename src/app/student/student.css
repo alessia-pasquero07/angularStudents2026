@@ -1,0 +1,6 @@
+.absent {
+    font-weight: bold;          /* Testo in grassetto */
+    font-size: 1.1em;           /* Ingrandisce leggermente il testo del 10% */
+    letter-spacing: 0.5px;      /* Distanzia leggermente le lettere */
+    text-transform: uppercase;  /* Trasforma tutto il testo in MAIUSCOLO */
+}
