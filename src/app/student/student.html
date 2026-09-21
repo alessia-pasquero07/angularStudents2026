@@ -1,6 +1,7 @@
 @for (item of students; track $index) {
-    <p [ngStyle]="{'background-color': item.gender == 'F' ? F_COLOR : M_COLOR}"
-       [ngClass]="{'absent': !item.present}">
+    <!--<p [ngStyle]="{'background-color': item.gender == 'F' ? F_COLOR : M_COLOR}"
+       [ngClass]="{'absent': !item.present}">-->
+    <p [ngStyle]="getSyle(item)">
         {{$index + 1}}) Il nome dello studente è {{item.name}}, vive a {{item.city}}
           @if(item.present){
         <span>presente</span>
